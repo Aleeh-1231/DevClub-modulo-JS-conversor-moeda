@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <title>UseFul</title>
+    <link rel="icon" type="image/png" href="./img/logo-useful.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo-useful-gif.gif" alt="Logo UseFul" width="40" height="40" />
+            <span>UseFul</span>
+        </div>
+
+        <nav>
+            <a>Enviar Dinheiro</a>
+            <a>
+                <img src="./img/globo-lang.png" alt="globo" width="25" height="25" />
+            </a>
+
+            <span>PT</span>
+
+            <a>
+                <img src="./img/menu.png" alt="menu" width="25" height="25" />
+
+            </a>
+
+            <button class="button-login"> Entre</button>
+            <button class="button-register"> Casdastre-se</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Envie dinheiro para qualquer lugar do mundo de forma rápida, segura e fácil.</h1>
+            <p>Com a UseFul, você pode enviar dinheiro para amigos e familiares em todo o mundo de forma rápida, segura
+                e fácil. Aproveite taxas competitivas e um processo simples para transferir fundos para onde eles são
+                mais necessários.</p>
+        </section>
+
+        <section>
+            <article>
+                <div>
+                    <label class="input-currency">
+                        <div class="send-currency">
+                            <spam >Enviar Valor</spam>
+
+                            <input type="text" placeholder="100,00" />
+                        </div>
+                        <img src="./img/brl.png" alt="bandeira do Brasil" width="30" height="30" /> BRL
+                    </label>
+                </div>
+
+                <img src="./img/convert.png" alt="converter dinheiro" width="45" height="45" />
+
+                <div class="currency-select-container">
+
+                    <button class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                        <div class="input-wrapper">
+                            <span>Recebedor</span>
+                            <input class=currency-input type="text" value="19.07" readonly>
+                        </div>
+
+                        <div class="selected-currency">
+                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30" />
+                            <span>USD</span>
+
+                            <!-- Ícone da seta para baixo -->
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Lista de Opções (O menu que abre) -->
+                    <ul class="dropdown-options" role="listbox">
+
+                        <!-- Opção 1: EUR -->
+                        <li class="option-item" role="option" data-value="AED">
+                            <img src="./img/eur.png" alt="Bandeira de Portugal" width="30" height="30" />
+                            <span><strong>EUR</strong> – Euro</span>
+                        </li>
+
+                        <!-- Opção 2: USD -->
+                        <li class="option-item" role="option" data-value="AED">
+                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30" />
+                            <span><strong>USD</strong> – Dollar dos Estados Unidos</span>
+                        </li>
+
+                    </ul>
+                </div>
+                </div>
+
+            </article>
+
+            <div class="info">
+                <span>Taxa de câmbio: 1 BRL = 0.1914 USD</span>
+
+                <span>Tarifa de envio: 0.00 BRL</span>
+
+            </div>
+
+            <button class="button-send"> <b>Enviar Dinheiro</b> </button>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

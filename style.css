@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #f3ebff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.75rem;
+    padding: 0.5rem 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button-login {
+    background-color: #3d393b;
+    color: #fff;
+}
+
+main {
+    margin-top: 5rem;
+    padding: 0 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    width: 70%;
+}
+
+p {
+    margin: 2rem 0;
+    font-size: 1.0rem;
+    width: 70%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.input-currency {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.send-currency {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    gap: 0.25rem;
+}
+
+.currency-select-container {
+    position: relative;
+    width: 30%;
+    /* Largura base ajustável para o seu layout */
+}
+
+.dropdown-trigger {
+    width: 100%;
+    height: 64px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    cursor: pointer;
+    /* Flexbox para alinhar o input à esquerda e a moeda à direita */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-trigger:focus,
+.dropdown-trigger:hover {
+    border-color: #8853b2;
+    /* Efeito de borda ao focar/passar o mouse */
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.selected-currency {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Espaçamento perfeito entre bandeira, texto e seta */
+    margin-left: 6px;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 72px;
+    /* Pequeno espaçamento logo abaixo do botão */
+    left: 0;
+    width: 100%;
+    max-height: 240px;
+    /* Limita a altura para forçar o scroll da imagem */
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+    /* Sombra suave profissional */
+    list-style: none;
+    overflow-y: auto;
+    /* Ativa a barra de rolagem vertical */
+    z-index: 10;
+    /* Escondido por padrão - O JavaScript vai controlar isso tirando essa classe */
+    display: none;
+}
+
+/* Classe utilitária que o JavaScript vai adicionar para abrir o menu */
+.dropdown-options.active {
+    display: block;
+}
+
+/* Cada item da lista */
+.option-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    /* Flexbox para alinhar a bandeira e os textos na horizontal */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.info {
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+
+}
+
+.button-send {
+    background-color: #8853b2;
+    color: #fff;
+    width: 20%;
+    font-size: 1.0rem;
+}
