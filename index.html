@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>UseFul</title>
     <link rel="icon" type="image/png" href="./img/logo-useful.png">
 </head>
@@ -25,13 +25,13 @@
         <nav>
             <a>Enviar Dinheiro</a>
             <a>
-                <img src="./img/globo-lang.png" alt="globo" width="25" height="25" />
+                <img src="./img/globo-lang.png" alt="globo" width="25" height="25" class="lang-icon" />
             </a>
 
             <span>PT</span>
 
             <a>
-                <img src="./img/menu.png" alt="menu" width="25" height="25" />
+                <img src="./img/menu.png" alt="menu" width="25" height="25" class="menu-icon" />
 
             </a>
 
@@ -53,27 +53,27 @@
                 <div>
                     <label class="input-currency">
                         <div class="send-currency">
-                            <spam >Enviar Valor</spam>
+                            <span>Enviar Valor</span>
 
-                            <input type="text" placeholder="100,00" />
+                            <input class="currency-input-convert" placeholder="R$ 100,00" />
                         </div>
                         <img src="./img/brl.png" alt="bandeira do Brasil" width="30" height="30" /> BRL
                     </label>
                 </div>
 
-                <img src="./img/convert.png" alt="converter dinheiro" width="45" height="45" />
+                <img src="./img/convert.png" alt="converter dinheiro" width="45" height="45" class="convert-buttom" />
 
                 <div class="currency-select-container">
 
                     <button class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
                         <div class="input-wrapper">
                             <span>Recebedor</span>
-                            <input class=currency-input type="text" value="19.07" readonly>
+                            <input class="currency-input" value="$ 19,37" readonly>
                         </div>
 
                         <div class="selected-currency">
-                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30" />
-                            <span>USD</span>
+                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30" class="main-flag-icon" />
+                            <span class="currency-code">USD</span>
 
                             <!-- Ícone da seta para baixo -->
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -87,14 +87,16 @@
                     <ul class="dropdown-options" role="listbox">
 
                         <!-- Opção 1: EUR -->
-                        <li class="option-item" role="option" data-value="AED">
-                            <img src="./img/eur.png" alt="Bandeira de Portugal" width="30" height="30" />
+                        <li class="option-item" role="option" data-value="EUR">
+                            <img src="./img/eur.png" alt="Bandeira de Portugal" width="30" height="30"
+                                class="flag-icon" />
                             <span><strong>EUR</strong> – Euro</span>
                         </li>
 
                         <!-- Opção 2: USD -->
-                        <li class="option-item" role="option" data-value="AED">
-                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30" />
+                        <li class="option-item" role="option" data-value="USD">
+                            <img src="./img/usd.png" alt="Bandeira dos Estados Unidos" width="30" height="30"
+                                class="flag-icon" />
                             <span><strong>USD</strong> – Dollar dos Estados Unidos</span>
                         </li>
 
@@ -105,7 +107,7 @@
             </article>
 
             <div class="info">
-                <span>Taxa de câmbio: 1 BRL = 0.1914 USD</span>
+                <span>Taxa de câmbio: <strong>1 BRL = 0.1914 USD</strong></span>
 
                 <span>Tarifa de envio: 0.00 BRL</span>
 

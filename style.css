@@ -86,10 +86,14 @@ article {
     gap: 0.25rem;
 }
 
+.convert-buttom, .lang-icon, .menu-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
 .currency-select-container {
     position: relative;
-    width: 30%;
-    /* Largura base ajustável para o seu layout */
+    width: 21%; /* Largura base ajustável para o seu layout */
 }
 
 .dropdown-trigger {
